@@ -1,0 +1,77 @@
+<html>
+
+    <style>
+
+        .inline {
+            display : inline-block;
+        }
+
+        .colorred {
+            color : red;
+        }
+
+        .greybackground {
+            background-color : rgb(37, 37, 37);
+        }
+
+    </style>
+
+    <body class="greybackground">
+
+        <br>
+        <br>
+
+            <center>
+
+                <div id="passwordscreen">
+
+                    <header>
+                        <h1 class="colorred">
+                            Project Anzena
+                        </h1>
+                    </header>
+    
+                    <div id="idsection">
+                        <p>
+                            Please enter your password:
+                        </p>
+                        <input type="password" id="password" value="" placeholder="Enter password here">
+                        <input type="button" value="Submit" onclick="submit()">
+                    </div>
+
+                    <div name="confirm/errorText">
+                        <p id="confirm/errorText" class="colorred">
+                            
+                        </p>
+                    </div>
+    
+                </div>
+
+            </center>
+
+    </body>
+
+    <script>
+
+        var anzena = "K19C11G11A11";
+
+        function submit() {
+            if (document.getElementById("password").value == anzena) {
+                passwordcorrect();
+            } else {
+                document.getElementById("confirm/errorText").innerHTML = "Incorrect Password. Please try again"
+            }
+        };
+
+        function passwordcorrect() {
+            document.getElementById("confirm/errorText").innerHTML = "Decrypting Files";
+            setTimeout(
+                function() {
+                    document.getElementById("passwordscreen").hidden = true;
+                },2000
+            )
+        };
+
+    </script>
+
+</html>
