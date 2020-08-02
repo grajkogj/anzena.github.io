@@ -1,0 +1,56 @@
+<html>
+
+    <style>
+
+        .inline {
+            display : inline-block;
+        }
+
+        .colorred {
+            color : red;
+        }
+
+        .greybackground {
+            background-color : rgb(37, 37, 37);
+        }
+
+    </style>
+
+    <body onload="createstorage()" class="greybackground">
+
+        <br>
+
+            <center>
+
+                <div id="passwordscreen">
+
+                    <header>
+                        <h1 class="colorred">
+                            Project Anzena
+                        </h1>
+                    </header>
+    
+                    <div id="idsection">
+                        <p style="color : white">
+                            Please enter your password:
+                        </p>
+                        <input type="password" id="password" value="" placeholder="Enter password here">
+                        <input type="button" value="Submit" onclick="submit()">
+                    </div>
+
+                    <div name="confirm/errorText">
+                        <p id="confirm/errorText" class="colorred">
+                            
+                        </p>
+                    </div>
+    
+                </div>
+
+            </center>
+
+    </body>
+
+    <script src="javascript.js">
+    </script>
+
+</html>
