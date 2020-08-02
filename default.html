@@ -16,9 +16,8 @@
 
     </style>
 
-    <body class="greybackground">
+    <body onload="createstorage()" class="greybackground">
 
-        <br>
         <br>
 
             <center>
@@ -32,7 +31,7 @@
                     </header>
     
                     <div id="idsection">
-                        <p>
+                        <p style="color : white">
                             Please enter your password:
                         </p>
                         <input type="password" id="password" value="" placeholder="Enter password here">
@@ -51,27 +50,7 @@
 
     </body>
 
-    <script>
-
-        var anzena = "K19C11G11A11";
-
-        function submit() {
-            if (document.getElementById("password").value == anzena) {
-                passwordcorrect();
-            } else {
-                document.getElementById("confirm/errorText").innerHTML = "Incorrect Password. Please try again"
-            }
-        };
-
-        function passwordcorrect() {
-            document.getElementById("confirm/errorText").innerHTML = "Decrypting Files";
-            setTimeout(
-                function() {
-                    document.getElementById("passwordscreen").hidden = true;
-                },2000
-            )
-        };
-
+    <script src="javascript.js">
     </script>
 
 </html>
