@@ -22,7 +22,7 @@ function passwordcorrect() {
     )
 };
 
-If (window.location.href == "JavaScript.js") {
+if (window.location.href == "JavaScript.js") {
     window.location.href = "default.html";
 };
 
