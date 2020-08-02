@@ -22,6 +22,10 @@ function passwordcorrect() {
     )
 };
 
+If (window.location.href == "JavaScript.js") {
+    window.location.href = "default.html";
+};
+
 function createstorage() {
     sessionStorage.setItem("auth", "false")
 };
