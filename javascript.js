@@ -21,15 +21,6 @@ function passwordcorrect() {
         },2000
     )
 };
-
-SetInteger(
-    Function() {
-        If (window.location.href == "JavaScript.js") {
-        window.location.href = "default.html";
-        }
-    }, 500
-);
-
 function createstorage() {
     sessionStorage.setItem("auth", "false")
 };
