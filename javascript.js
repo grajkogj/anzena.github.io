@@ -1,4 +1,4 @@
-var anzena = "K19C11G11A11";
+var anzena = PASSWORD;
 function submit() {
     if (document.getElementById("password").value == anzena) {
         passwordcorrect();
