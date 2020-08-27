@@ -1,4 +1,4 @@
-var anzena = PASSWORD;
+var anzena = "HackersGuild20202021";
 function submit() {
     if (document.getElementById("password").value == anzena) {
         passwordcorrect();
