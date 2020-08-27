@@ -13,15 +13,25 @@
             display : inline-block;
             line-height : 30px;
         }
+        .button {
+            display : inline-block;
+            background-color :rgb(110, 110, 110);
+            min-width : 75px;
+            min-height : 25px;
+            border-style: solid;
+            border-color : red;
+        }
     </style>
+
+    
 
     <head>
 
         <div class="header">
-            <div style="width : 150px">
+            <div style="width : 525px">
                 <center>
-                    <h1 style="color : red; font-family :monospace; display : inline;">
-                        Anzena
+                    <h1 style="color : red; font-family :monospace; display : inline;" class="headerElement">
+                        Hackers Guild Resource Database
                     </h1>
                     <input type="image" src="lock-icon.jpg" class="headerElement" width="25px" height="30px" onclick="lockScreen()">
                 </center>
@@ -32,7 +42,8 @@
 
     <body onload="passcheck(); recreatestorage()">
 
-        
+        <br>
+        <input type="button" class="button" value="Xray Goggles (Drag and drop me in your bookmark bar)" href="javascript:(function () {var script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}())">
 
     </body>
 
